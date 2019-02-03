@@ -23,11 +23,11 @@
       
     <main class="container">
       <section class="welcome">
-        <p><b>Welcome<br>
-          to the gorgeous</b></p>
-        <h1 class="title">Седона</h1>
-        <p><b>"Because the Grand<br>
-          Canyon sucks!"</b></p>
+        <h1 class="visualy-hidden">Седона</h1>
+          <p class="welcome-sedona">
+            <img src="img/welcome.svg" width="100" height="50" alt="Добро пожаловать в Седону">
+          </p>
+
         <p><b>Седона - небольшой городок в Аризоне,<br>
             заслуживающий большего!</b></p>  
       </section>
@@ -56,8 +56,40 @@
         <p>Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             
-            <h3>Поиск гостиницы в Седоне</h3>
-            <!-- Здесь будет форма -->
+            
+        <h3>Поиск гостиницы в Седоне</h3>
+
+            <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+              <p class="appointment-item">
+                <label for="appointment-date">Дата заезда</label>
+                <input id="appointment-date" type="text" name="date" value="" placeholder="24 апреля 2017">
+              </p>
+              <p class="appointment-item">
+                <label for="appointment-date">Дата выезда</label>
+                <input id="appointment-date" type="text" name="date" value="" placeholder="4 июля 2017">
+              </p>
+              <p class="appointment-item">
+                <label for="appointment-quantity">Взрослые</label>
+                <button class="button button-quantity-plus" type="button">
+                  <img src="img/plus.png" width="100" height="50" alt="Кнопка плюс">
+                </button>
+                <input id="appointment-quantity" type="number" name="quantity" value="" min="0" max="10" step="1" placeholder="2">  
+                <button class="button button-quantity-minus" type="button">
+                  <img src="img/minus.png" width="100" height="50" alt="Кнопка минус">
+                </button>
+              </p>
+              <p class="appointment-item"> 
+                <label for="appointment-quantity">Дети</label>
+                <button class="button button-quantity-plus" type="button">
+                  <img src="img/plus.png" width="100" height="50" alt="Кнопка плюс">
+                </button>
+                <input id="appointment-quantity" type="number" name="quantity" value="" min="0" max="10" step="1" placeholder="0">
+                <button class="button button-quantity-minus" type="button">
+                  <img src="img/minus.png" width="100" height="50" alt="Кнопка минус">
+                </button>
+              </p>
+              <button class="button" type="submit">Найти</button>
+            </form> 
 
       </section>
 
@@ -67,16 +99,17 @@
 
     </main>
     <footer class="main-footer">
-      <p class="footer-contacts">#visitsedona</p>
-      <div class="footer-social">
+      <p class="footer-info">#visitsedona</p> 
+      <div class="footer-social"> 
         <ul>
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Ютуб</a></li>
+          <li><a class="social-button" href="#" aria-label="Седона в Твиттере">Твиттер</a></li>
+          <li><a class="social-button" href="#" aria-label="Седона в Фейсбуке">Фейсбук</a></li>
+          <li><a class="social-button" href="#" aria-label="Седона в Ютубе">Ютуб</a></li>
         </ul>
       </div>
       <p class="footer-copyright">Website by
-        <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
+        <a class="link" href="https://htmlacademy.ru/intensive/htmlcss" 
+        aria-label="Интенсив 'Профессиональный HTML и CSS, уровень 1'">html academy</a>
       </p>
     </footer>  
   </body>
