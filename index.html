@@ -60,30 +60,31 @@
         <h3>Поиск гостиницы в Седоне</h3>
 
             <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+               
+                <label for="appointment-date-arrival">Дата заезда
+                  <input id="appointment-date-arrival" type="date" name="date" value="" placeholder="24 апреля 2017">
+                </label>
+             
+                <label for="appointment-date-departure">Дата выезда
+                  <input id="appointment-date-departure" type="date" name="date" value="" placeholder="4 июля 2017">
+                </label>
+              
               <p class="appointment-item">
-                <label for="appointment-date">Дата заезда</label>
-                <input id="appointment-date" type="text" name="date" value="" placeholder="24 апреля 2017">
-              </p>
-              <p class="appointment-item">
-                <label for="appointment-date">Дата выезда</label>
-                <input id="appointment-date" type="text" name="date" value="" placeholder="4 июля 2017">
-              </p>
-              <p class="appointment-item">
-                <label for="appointment-quantity">Взрослые</label>
+                <label for="appointment-quantity-adults">Взрослые</label>
                 <button class="button button-quantity-plus" type="button">
                   <img src="img/plus.png" width="100" height="50" alt="Кнопка плюс">
                 </button>
-                <input id="appointment-quantity" type="number" name="quantity" value="" min="0" max="10" step="1" placeholder="2">  
+                <input id="appointment-quantity-adults" type="number" name="quantity" value="" min="0" max="10" step="1" placeholder="2">  
                 <button class="button button-quantity-minus" type="button">
                   <img src="img/minus.png" width="100" height="50" alt="Кнопка минус">
                 </button>
               </p>
               <p class="appointment-item"> 
-                <label for="appointment-quantity">Дети</label>
+                <label for="appointment-quantity-children">Дети</label>
                 <button class="button button-quantity-plus" type="button">
                   <img src="img/plus.png" width="100" height="50" alt="Кнопка плюс">
                 </button>
-                <input id="appointment-quantity" type="number" name="quantity" value="" min="0" max="10" step="1" placeholder="0">
+                <input id="appointment-quantity-children" type="number" name="quantity" value="" min="0" max="10" step="1" placeholder="0">
                 <button class="button button-quantity-minus" type="button">
                   <img src="img/minus.png" width="100" height="50" alt="Кнопка минус">
                 </button>
@@ -99,17 +100,31 @@
 
     </main>
     <footer class="main-footer">
-      <p class="footer-info">#visitsedona</p> 
-      <div class="footer-social"> 
+      <p class="footer-contacts">#visitsedona</p>
+      <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#" aria-label="Седона в Твиттере">Твиттер</a></li>
-          <li><a class="social-button" href="#" aria-label="Седона в Фейсбуке">Фейсбук</a></li>
-          <li><a class="social-button" href="#" aria-label="Седона в Ютубе">Ютуб</a></li>
+          <li>
+            <a class="social-button" href="#" aria-label="Седона в Твиттере">
+              <img src="img/twitter.svg" width="100" height="50" alt="">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#" aria-label="Седона в Фейсбуке">
+              <img src="img/fb.svg" width="100" height="50" alt="">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#" aria-label="Седона в Ютубе">
+                <img src="img/youtube.svg" width="100" height="50" alt="">
+            </a>
+          </li>
         </ul>
       </div>
       <p class="footer-copyright">Website by
-        <a class="link" href="https://htmlacademy.ru/intensive/htmlcss" 
-        aria-label="Интенсив 'Профессиональный HTML и CSS, уровень 1'">html academy</a>
+        <a class="link" href="https://htmlacademy.ru/intensive/htmlcss"
+        aria-label="Интенсив 'Профессиональный HTML и CSS, уровень 1'">
+          <img src="img/html-academy.svg" width="100" height="50" alt="">
+        </a>
       </p>
     </footer>  
   </body>
