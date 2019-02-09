@@ -1,0 +1,303 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #696969;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.inner-page {
+  background-color: #fefefe;
+  background-repeat: repeat;  
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation,
+.appointment-form {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+  
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+.site-navigation a:focus {
+  color: #cacaca;
+}
+.site-navigation a:active {
+  color: #766357;
+}
+
+.site-navigation-left {
+  text-align: left;
+}
+
+.site-navigation-right {
+  text-align: right;
+}
+
+.welcome {
+background-image: url("img/maska.jpg"), url("img/sedona.jpg");
+background-repeat: no-repeat;
+}
+
+.welcome-sedona-item {
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+.features {
+  text-align: center;
+}
+.search b {
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.search-info {
+  text-align: center;
+}
+
+.search-hotels {
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.search-hotels:hover {
+  color: #ffffff;
+  background-color: #604e43;
+}
+
+.search-hotels:active {
+  color: #928a85;
+  background-color: #503e33;
+}
+
+.placeholder {
+  background-color: #f2f2f2;
+}
+
+.placeholder a:hover {
+  background-color: #ebebeb;
+}
+
+.placeholder a:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.date {
+  background: url("calendar.svg");
+  color: #dcdcdc;
+
+}
+.button-quantity-plus,
+.button-quantity-minus {
+  vertical-align: middle;
+  color: #a9a9a9;
+  background-color: #f2f2f2;
+}
+
+.button-quantity-plus,
+.button-quantity-minus,
+.date:hover {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+.button-quantity-plus,
+.button-quantity-minus,
+.date:active {
+  color: #000000;
+  background-color: #81b3d2;
+}
+
+.button-find {
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.button-find:hover {
+  color: #ffffff;
+  background-color: #669ec0;
+}
+
+.button-find:active {
+  color: #94b9d2;
+  background-color: #5496bd;
+}
+
+.site-navigation-current {
+  color: #766357;
+}
+
+.catalog-list {
+  list-style: none;
+}
+.catalog-item h3 {
+  text-align: left;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.catalog-item h3:hover {
+  color: #81b3d2;
+}
+
+.catalog-item h3:active {
+  color: #cacaca;
+}
+
+.catalog-item-info {
+  text-align: left;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.catalog-item-more {
+  text-align: left;
+}
+
+ .catalog-item-more .button-more {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #81b3d2;
+ }
+
+ .catalog-item-more .button-more:hover {
+  color: #ffffff;
+  background-color: #669ec0;
+ }
+
+ .catalog-item-more .button-more:active {
+  color: #94b9d2;
+  background-color: #5496bd;
+ }
+
+ .catalog-item-more .button-book {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #766357;
+ }
+
+ .catalog-item-more .button-book:hover {
+  color: #ffffff;
+  background-color: #604e43;
+ }
+
+ .catalog-item-more .button-book:active {
+  color: #928a85;
+  background-color: #503e33;
+ }
+
+ .star {
+  text-align: right;
+  color: #81b3d2
+ }
+
+.catalog-item .b {
+  text-align: right;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #666666;
+  background-color: #f2f2f2;
+}
+
+.main-footer {
+  color: #000000;
+  background-color: #fdfdfd;
+}
+
+.footer-contacts {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.social-button:hover {
+  color: #ffffff;
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+}
+
+
+.footer-copyright .a {
+  color: #231f20;
+}
+
+.footer-copyright .a:hover {
+  color: #81b3d2;
+}
+
+.footer-copyright .a:active {
+  color: #bdbbbc;
+}
