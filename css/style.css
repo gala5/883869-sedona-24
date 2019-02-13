@@ -14,6 +14,10 @@ body {
 }
 
 .inner-page {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #333333;
   background-color: #fefefe;
   background-repeat: repeat;  
 }
@@ -31,7 +35,8 @@ a {
   background-color: #ffffff;
 }
 
-.site-navigation {
+.site-navigation-left,
+.site-navigation-right {
   list-style: none;
 }
 
@@ -40,23 +45,28 @@ a {
   color: #000000;
 }
   
+.catalog-item-title {
+  text-align: left;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
 .site-navigation-left a:hover,
-.site-navigation-right a:hover {
+.site-navigation-right a:hover,
+.catalog-item-title:hover {
   color: #81b3d2;
 }
 
 .site-navigation-left a:focus,
 .site-navigation-right a:focus {
-  color: #cacaca;
+  color: #766357;
 }
 
 .site-navigation-left a:active, 
-.site-navigation-right a:active {
-  color: #b2b2b2;
-}
-
-.site-navigation-current {
-  color: #766357;
+.site-navigation-right a:active,
+.catalog-item-title:active {
+  color: #cacaca;
 }
 
 .site-navigation-left {
@@ -69,22 +79,6 @@ a {
 
 .catalog-list {
   list-style: none;
-}
-
-.catalog-item-title {
-  text-align: left;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #000000;
-}
-
-.catalog-item-title:hover {
-  color: #81b3d2;
-}
-
-.catalog-item-title:active {
-  color: #cacaca;
 }
 
 .welcome {
@@ -110,7 +104,6 @@ background-repeat: no-repeat;
   line-height: 36px;
   font-weight: 700;
   color: #000000;
-  background-color: #ffffff;
 }
 
 .search-info {
@@ -127,6 +120,16 @@ background-repeat: no-repeat;
   background-color: #766357;
 }
 
+.button {
+  text-align: center;
+  color: #ffffff;
+  background-color: #81b3d2;
+  font-weight: 700;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
 .search-hotels:hover,
 .button-book:hover {
   background-color: #604e43;
@@ -138,57 +141,44 @@ background-repeat: no-repeat;
   background-color: #503e33;
 }
 
-.placeholder {
+.date {
+  background: url("calendar.svg");
+  color: #000000; 
   background-color: #f2f2f2;
+  border: none;
 }
 
-.placeholder:hover {
+.date:hover {
   background-color: #ebebeb;
 }
 
-.placeholder:focus {
+.date:focus {
+  background-color: transparent;
   border: 2px solid #e5e5e5;
-}
-
-.date {
-  background: url("calendar.svg");
-  color: #dcdcdc;
 }
 
 .button-quantity-plus,
 .button-quantity-minus {
-  vertical-align: middle;
   color: #a9a9a9;
   background-color: #f2f2f2;
 }
 
 .button-quantity-plus:hover,
-.button-quantity-minus:hover,
-.date:hover {
+.button-quantity-minus:hover {
   color: #000000;
-  background-color: #f2f2f2;
 }
 
 .button-quantity-plus:active,
-.button-quantity-minus:active,
-.date:active {
-  color: #000000;
-  background-color: #81b3d2;
+.button-quantity-minus:active {
+  color: #81b3d2;
 }
 
 .button-find {
-  text-align: center;
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700;
-  color: #ffffff;
-  background-color: #81b3d2;
 }
 
 .button-more {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 700;
   color: #ffffff;
   background-color: #81b3d2;
 }
@@ -206,31 +196,15 @@ background-repeat: no-repeat;
 }
 
 .button-book {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 700;
   color: #ffffff;
   background-color: #766357;
 }
 
-.social-button {
-  color: #ffffff;
-  background-color: #81b3d2;
-}
-
-.social-button:active {
-  color: #88b6d1;
-  background-color: #5496bd;
-}
-
 .catalog-item-info {
   text-align: left;
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
 }
 
-.catalog-item .b {
+.rating {
   text-align: right;
   color: #666666;
   background-color: #f2f2f2;
@@ -238,7 +212,7 @@ background-repeat: no-repeat;
 
 .star {
   text-align: right;
-  color: #81b3d2
+  color: #81b3d2;
 }
 
 .main-footer {
@@ -258,6 +232,16 @@ background-repeat: no-repeat;
 
 .footer-social ul {
   list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.social-button:active {
+  color: #88b6d1;
+  background-color: #5496bd;
 }
 
 .footer-copyright {
