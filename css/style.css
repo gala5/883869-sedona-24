@@ -35,17 +35,27 @@ a {
   list-style: none;
 }
 
-.site-navigation a {
+.site-navigation-left a,
+.site-navigation-right a {
   color: #000000;
 }
   
-.site-navigation a:hover {
+.site-navigation-left a:hover,
+.site-navigation-right a:hover {
   color: #81b3d2;
 }
-.site-navigation a:focus {
+
+.site-navigation-left a:focus,
+.site-navigation-right a:focus {
   color: #cacaca;
 }
-.site-navigation a:active {
+
+.site-navigation-left a:active, 
+.site-navigation-right a:active {
+  color: #b2b2b2;
+}
+
+.site-navigation-current {
   color: #766357;
 }
 
@@ -55,6 +65,26 @@ a {
 
 .site-navigation-right {
   text-align: right;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item-title {
+  text-align: left;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.catalog-item-title:hover {
+  color: #81b3d2;
+}
+
+.catalog-item-title:active {
+  color: #cacaca;
 }
 
 .welcome {
@@ -69,10 +99,12 @@ background-repeat: no-repeat;
   font-weight: 700;
   color: #000000;
 }
+
 .features {
   text-align: center;
 }
-.search b {
+
+.search {
   text-align: center;
   font-size: 30px;
   line-height: 36px;
@@ -82,7 +114,8 @@ background-repeat: no-repeat;
 }
 
 .search-info {
-  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .search-hotels {
@@ -94,12 +127,13 @@ background-repeat: no-repeat;
   background-color: #766357;
 }
 
-.search-hotels:hover {
-  color: #ffffff;
+.search-hotels:hover,
+.button-book:hover {
   background-color: #604e43;
 }
 
-.search-hotels:active {
+.search-hotels:active,
+.button-book:active {
   color: #928a85;
   background-color: #503e33;
 }
@@ -108,20 +142,19 @@ background-repeat: no-repeat;
   background-color: #f2f2f2;
 }
 
-.placeholder a:hover {
+.placeholder:hover {
   background-color: #ebebeb;
 }
 
-.placeholder a:focus {
-  background-color: #ffffff;
+.placeholder:focus {
   border: 2px solid #e5e5e5;
 }
 
 .date {
   background: url("calendar.svg");
   color: #dcdcdc;
-
 }
+
 .button-quantity-plus,
 .button-quantity-minus {
   vertical-align: middle;
@@ -129,14 +162,15 @@ background-repeat: no-repeat;
   background-color: #f2f2f2;
 }
 
-.button-quantity-plus,
-.button-quantity-minus,
+.button-quantity-plus:hover,
+.button-quantity-minus:hover,
 .date:hover {
   color: #000000;
   background-color: #f2f2f2;
 }
-.button-quantity-plus,
-.button-quantity-minus,
+
+.button-quantity-plus:active,
+.button-quantity-minus:active,
 .date:active {
   color: #000000;
   background-color: #81b3d2;
@@ -151,99 +185,60 @@ background-repeat: no-repeat;
   background-color: #81b3d2;
 }
 
-.button-find:hover {
+.button-more {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
   color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.button-find:hover,
+.button-more:hover,
+.social-button:hover {
   background-color: #669ec0;
 }
 
-.button-find:active {
+.button-find:active,
+.button-more:active {
   color: #94b9d2;
   background-color: #5496bd;
 }
 
-.site-navigation-current {
-  color: #766357;
-}
-
-.catalog-list {
-  list-style: none;
-}
-.catalog-item h3 {
-  text-align: left;
-  font-size: 21px;
-  line-height: 26px;
+.button-book {
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 700;
-  color: #000000;
+  color: #ffffff;
+  background-color: #766357;
 }
 
-.catalog-item h3:hover {
-  color: #81b3d2;
+.social-button {
+  color: #ffffff;
+  background-color: #81b3d2;
 }
 
-.catalog-item h3:active {
-  color: #cacaca;
+.social-button:active {
+  color: #88b6d1;
+  background-color: #5496bd;
 }
 
 .catalog-item-info {
   text-align: left;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
   color: #333333;
 }
 
-.catalog-item-more {
-  text-align: left;
-}
-
- .catalog-item-more .button-more {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 700;
-  color: #ffffff;
-  background-color: #81b3d2;
- }
-
- .catalog-item-more .button-more:hover {
-  color: #ffffff;
-  background-color: #669ec0;
- }
-
- .catalog-item-more .button-more:active {
-  color: #94b9d2;
-  background-color: #5496bd;
- }
-
- .catalog-item-more .button-book {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 700;
-  color: #ffffff;
-  background-color: #766357;
- }
-
- .catalog-item-more .button-book:hover {
-  color: #ffffff;
-  background-color: #604e43;
- }
-
- .catalog-item-more .button-book:active {
-  color: #928a85;
-  background-color: #503e33;
- }
-
- .star {
-  text-align: right;
-  color: #81b3d2
- }
-
 .catalog-item .b {
   text-align: right;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
   color: #666666;
   background-color: #f2f2f2;
+}
+
+.star {
+  text-align: right;
+  color: #81b3d2
 }
 
 .main-footer {
@@ -255,7 +250,6 @@ background-repeat: no-repeat;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
 }
 
 .footer-social {
@@ -266,38 +260,18 @@ background-repeat: no-repeat;
   list-style: none;
 }
 
-.social-button {
-  color: #ffffff;
-  background-color: #81b3d2;
-}
-
-.social-button:hover {
-  color: #ffffff;
-  background-color: #669ec0;
-}
-
-.social-button:active {
-  color: #88b6d1;
-  background-color: #5496bd;
-}
-
 .footer-copyright {
   text-align: center;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #000000;
 }
 
-
-.footer-copyright .a {
+.footer-copyright a {
   color: #231f20;
 }
 
-.footer-copyright .a:hover {
+.footer-copyright a:hover {
   color: #81b3d2;
 }
 
-.footer-copyright .a:active {
+.footer-copyright a:active {
   color: #bdbbbc;
 }
