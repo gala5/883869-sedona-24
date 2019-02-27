@@ -10,27 +10,36 @@
   <body>
     <header class="main-header"> 
       <nav class="main-navigation">
-        <ul class="site-navigation-left">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="foto.html">Фото и видео</a></li>
-        </ul> 
-      <a class="main-header-logo">
-            <img src="img/index-logo.svg" width="100" height="50" alt="Логотип Седоны">
-      </a>
-        <ul class="site-navigation-right">
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
-        </ul>
+        <div class="main-navigation-wrapper">
+          <ul class="site-navigation-left">
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="foto.html">Фото и видео</a></li>
+          </ul>       
+          <a class="main-header-logo">
+            <img src="img/index-logo.svg" width="140" height="72" alt="Логотип Седоны">
+          </a>
+          <ul class="site-navigation-right">
+            <li><a href="map.html">Карта штата</a></li>
+            <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
+          </ul>
+        </div>   
       </nav>
     </header>
       
     <main class="container">
       <section class="welcome">
         <h1 class="visualy-hidden">Седона</h1>
-          <p class="welcome-sedona">
-            <img src="img/welcome.svg" width="100" height="50" alt="Добро пожаловать в Седону">
+        <div class="welcome-sedona-wrapper">
+          <p class="sedona">
+            <img src="img/sedona.jpg" width="1200" height="780" alt="Седона">
           </p>
-
+          <p class="welcome-sedona">
+            <img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
+          </p>
+          <p class="welcome-sedona-maska">
+            <img src="img/maska.jpg" width="1200" height="58" alt="Маска">
+          </p>
+        </div>
         <div class="item"> 
           <p class="welcome-sedona-item"><b>Седона - небольшой городок в Аризоне,<br>
             заслуживающий большего!</b></p>
@@ -57,7 +66,7 @@
       </section>
 
       <section class="search">
-        <p><b>Заинтересовались?</b></p>
+        <p class="interest"><b>Заинтересовались?</b></p>
         <p class="search-info">Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             
@@ -75,24 +84,16 @@
                 </label>
               
               <p class="appointment-item">
-                <label for="appointment-quantity-adults">Взрослые</label>
-                <button class="button button-quantity-plus" type="button">
-                  <img src="img/plus.png" width="100" height="50" alt="Кнопка плюс">
-                </button>
+                <label for="appointment-quantity-adults">Взрослые:</label>
+                  <span class="quantity-plus">+</span>
                 <input id="appointment-quantity-adults" type="number" name="quantity" value="" min="0" max="10" step="1" placeholder="2">  
-                <button class="button button-quantity-minus" type="button">
-                  <img src="img/minus.png" width="100" height="50" alt="Кнопка минус">
-                </button>
+                  <span class="quantity-minus">-</span>
               </p>
               <p class="appointment-item"> 
-                <label for="appointment-quantity-children">Дети</label>
-                <button class="button button-quantity-plus" type="button">
-                  <img src="img/plus.png" width="100" height="50" alt="Кнопка плюс">
-                </button>
+                <label for="appointment-quantity-children">Дети:</label>
+                  <span class="quantity-plus">+</span>
                 <input id="appointment-quantity-children" type="number" name="quantity" value="" min="0" max="10" step="1" placeholder="0">
-                <button class="button button-quantity-minus" type="button">
-                  <img src="img/minus.png" width="100" height="50" alt="Кнопка минус">
-                </button>
+                <span class="quantity-minus">-</span>
               </p>
               <button class="button button-find" type="submit">Найти</button>
             </form> 
@@ -105,32 +106,34 @@
 
     </main>
     <footer class="main-footer">
-      <p class="footer-contacts">#visitsedona</p>
-      <div class="footer-social">
-        <ul>
-          <li>
-            <a class="social-button" href="#" aria-label="Седона в Твиттере">
-              <img src="img/twitter.svg" width="100" height="50" alt="">
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#" aria-label="Седона в Фейсбуке">
-              <img src="img/fb.svg" width="100" height="50" alt="">
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#" aria-label="Седона в Ютубе">
-                <img src="img/youtube.svg" width="100" height="50" alt="">
-            </a>
-          </li>
-        </ul>
+      <div class="container-footer">
+        <p class="footer-contacts">#visitsedona</p>
+          <div class="footer-social">
+            <ul>
+              <li>
+                <a class="social-button" href="#" aria-label="Седона в Твиттере">
+                  <img src="img/twitter.svg" width="46" height="48" alt="">
+                </a>
+              </li>
+              <li>
+                <a class="social-button" href="#" aria-label="Седона в Фейсбуке">
+                  <img src="img/fb.svg" width="46" height="48" alt="">
+                </a>
+              </li>
+              <li>
+                <a class="social-button" href="#" aria-label="Седона в Ютубе">
+                  <img src="img/youtube.svg" width="46" height="48" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        <p class="footer-copyright">Website by
+          <a class="link" href="https://htmlacademy.ru/intensive/htmlcss"
+          aria-label="Интенсив 'Профессиональный HTML и CSS, уровень 1'">
+            <img src="img/html-academy.svg" width="115" height="41" alt="">
+          </a>
+        </p>
       </div>
-      <p class="footer-copyright">Website by
-        <a class="link" href="https://htmlacademy.ru/intensive/htmlcss"
-        aria-label="Интенсив 'Профессиональный HTML и CSS, уровень 1'">
-          <img src="img/html-academy.svg" width="100" height="50" alt="">
-        </a>
-      </p>
     </footer>  
   </body>
 </html>
